@@ -14,6 +14,7 @@ fn main() {
         .header_contents(
             "wrapper.h",
             "#include <nice/agent.h>
+             #include <nice/address.h>
              #include <nice/interfaces.h>
 
              #include <stun/stunagent.h>
