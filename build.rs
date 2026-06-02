@@ -49,6 +49,7 @@ fn main() {
                 .iter()
                 .map(|path| format!("-I{}", path.to_string_lossy())),
         )
+        .blocklist_type("niceaddress_union")
         .generate()
         .expect("Unable to generate bindings");
     let out_path = PathBuf::from(env::var("OUT_DIR").unwrap());
